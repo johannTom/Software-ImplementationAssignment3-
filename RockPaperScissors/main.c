@@ -12,6 +12,11 @@
 
 char* rps_result(char* player1, char* player2) {
    
+    if (strcmp(player1, "Rock") == 0 && strcmp(player2, "Rock") == 0 ||
+        strcmp(player1, "Scissors") == 0 && strcmp(player2, "Scissors") == 0 ||
+        strcmp(player1, "Paper") == 0 && strcmp(player2, "Paper") == 0) {
+        return DRAW;
+    }
     if (strcmp(player1, "Rock") == 0 && strcmp(player2, "Paper") == 0 ||
         strcmp(player1, "Scissors") == 0 && strcmp(player2, "Rock") == 0 ||
         strcmp(player1, "Paper") == 0 && strcmp(player2, "Scissors") == 0) {
@@ -21,6 +26,7 @@ char* rps_result(char* player1, char* player2) {
         //player1 wins
         return PLAYER1;
     }
+   
 
 }
 
