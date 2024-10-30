@@ -32,7 +32,24 @@ namespace rpsUnitTest
 
 			Assert::AreEqual(result, expected);
 		}
+		TEST_METHOD(player1Rockandplayer2Scissors)
+		{
 
+			char* expected = "Player1";
+			char* result;
+			result = rps_result("Rock", "Scissors");
+
+			Assert::AreEqual(result, expected);
+		}
+		TEST_METHOD(player1Rockandplayer2lamb)
+		{
+
+			char* expected = "Invalid";
+			char* result;
+			result = rps_result("Rock", "lamb");
+
+			Assert::AreEqual(result, expected);
+		}
 		
 	};
 }
