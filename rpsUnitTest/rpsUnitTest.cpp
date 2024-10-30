@@ -13,10 +13,10 @@ namespace rpsUnitTest
 	{
 	public:
 		
-		TEST_METHOD(player1Rockandplayer2Rock)
+		TEST_METHOD(player1Rockandplayer2Paper)
 		{
-			//First Failing test
-			char* expected =  "Player1";
+			 
+			char* expected =  "Player2";
 			char* result;
 			result = rps_result("Rock", "Paper");
 			 	 
